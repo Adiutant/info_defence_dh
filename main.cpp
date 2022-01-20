@@ -6,7 +6,7 @@ int main() {
     Diffie_Hellman dh;
     Person Alice;
     Person Bob;
-    Diffie_Hellman::generateKey(Alice,Bob);
+    Diffie_Hellman::GenerateKey(Alice,Bob);
    // cout<< Alice.first_step_value<<endl;
     cout<<Alice.key<<endl;
     cout<<Bob.key<<endl;

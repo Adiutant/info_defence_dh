@@ -8,7 +8,11 @@
 class Diffie_Hellman{
 private:
     static BigInteger Pow(BigInteger& value,BigInteger exponent);
+    static void PerformLastStep(Person& Alice,Person& Bob);
+    static void PerformFirstStep(Person& Alice,Person& Bob);
+    static void GenerateSourceNumbers(Person& Alice,Person& Bob);
 public:
-    static void generateKey(Person& Alice,Person& Bob);
+
+    static void GenerateKey(Person& Alice,Person& Bob);
 };
 #endif //INFO_DEFENCE_DH_DIFFIE_HELLMAN_H
